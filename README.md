@@ -1,4 +1,4 @@
-# ZenZone (Rust Port)
+# croniter (Rust Port)
 
 A Rust implementation of the original ZenZone Python project, created as part of the Code Resurrection 2026 – Port Mortem hackathon (Track D: Python → Rust).
 
@@ -6,8 +6,8 @@ A Rust implementation of the original ZenZone Python project, created as part of
 
 This project is a Rust port of the following open-source Python repository:
 
-- Original Repository: <Original GitHub Repository URL>
-- Fork Used During Development (if applicable): <Your Fork URL>
+- Original Repository: <https://github.com/pallets-eco/croniter.git>
+- Fork Used During Development (if applicable): <https://github.com/Tanya-garg10/croniter.git>
 
 ## Project Goal
 
