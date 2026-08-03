@@ -1,6 +1,6 @@
 # croniter (Rust Port)
 
-A Rust implementation of the original ZenZone Python project, created as part of the Code Resurrection 2026 – Port Mortem hackathon (Track D: Python → Rust).
+A Rust implementation of the original croniter Python project, created as part of the Code Resurrection 2026 – Port Mortem hackathon (Track D: Python → Rust).
 
 ## Original Repository
 
