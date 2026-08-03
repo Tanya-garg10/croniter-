@@ -1,13 +1,10 @@
 # croniter-rs
 
-A Rust port of the core cron scheduling behavior from the original Python project.
+Rust port of the core cron scheduling behavior from the original Python project.
 
-## Features
+## Migration rationale
 
-- Parse cron expressions with minute/hour/day/month/day-of-week fields
-- Support optional seconds and year fields
-- Match specific timestamps and iterate to the next matching time
-- Provide a small CLI for quick scheduling checks
+This port preserves the central workflow of the original library: parse a cron expression, check whether a timestamp matches, and iterate to the next matching timestamp. The implementation uses a small native Rust date type and standard Rust collections rather than Python runtime interop.
 
 ## Build
 
@@ -28,3 +25,15 @@ cargo run -- "0 0 * * *" "2024-01-01 00:00:00"
 ```
 
 The CLI prints the next matching timestamp after the supplied base time.
+
+## Port-mortem layout
+
+- [README.md](README.md) — migration rationale and build instructions
+- [DECISIONS.md](DECISIONS.md) — major divergences and their rationale
+- [Dockerfile](Dockerfile) — builds a runnable artifact
+- [src](src) — idiomatic Rust implementation
+- [tests/original](tests/original) — original test corpus location
+- [tests/port](tests/port) — additional regression tests
+- [fuzz](fuzz) — differential-fuzzing scaffold
+- [bench](bench) — benchmark methodology and results
+- [.port-mortem.toml](.port-mortem.toml) — project metadata
